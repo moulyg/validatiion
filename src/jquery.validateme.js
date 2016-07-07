@@ -1,15 +1,15 @@
 /*
- * ValidationPlugin
- * https://github.com/HP/ValidationPlugin
+ * validateme
+ * https://github.com/moulyg/validatiion
  *
- * Copyright (c) 2015 mouly
+ * Copyright (c) 2016 mouly
  * Licensed under the MIT license.
  */
 
 (function($) {
 
   // Collection method.
-  $.fn.ValidationPlugin = function() {
+  $.fn.validateme = function() {
     return this.each(function(i) {
       // Do something awesome to each selected element.
       $(this).html('awesome' + i);
@@ -17,20 +17,20 @@
   };
 
   // Static method.
-  $.ValidationPlugin = function(options) {
+  $.validateme = function(options) {
     // Override default options with passed-in options.
-    options = $.extend({}, $.ValidationPlugin.options, options);
+    options = $.extend({}, $.validateme.options, options);
     // Return something awesome.
     return 'awesome' + options.punctuation;
   };
 
   // Static method default options.
-  $.ValidationPlugin.options = {
+  $.validateme.options = {
     punctuation: '.'
   };
 
   // Custom selector.
-  $.expr[':'].ValidationPlugin = function(elem) {
+  $.expr[':'].validateme = function(elem) {
     // Is this element awesome?
     return $(elem).text().indexOf('awesome') !== -1;
   };

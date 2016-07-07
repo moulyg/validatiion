@@ -1,7 +1,7 @@
 {
-  "name": "Validation Plugin",
-  "title": "Awesome Validation",
-  "description": "The best jQuery plugin ever.",
+  "name": "validateme",
+  "title": "Validate Me",
+  "description": "This is a validation plugin which is easliy to intergrate in your project",
   "version": "0.1.0",
   "homepage": "https://github.com/moulyg/validatiion",
   "author": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/moulyg/validatiion"
+    "url": "https://github.com/moulyg/validatiion.git"
   },
   "bugs": "https://github.com/moulyg/validatiion/issues",
   "licenses": [
@@ -20,7 +20,7 @@
     }
   ],
   "dependencies": {
-    "jquery": "2.0"
+    "jquery": "*"
   },
   "keywords": []
 }
